@@ -1,0 +1,59 @@
+# Ignore node_modules and build directories
+node_modules
+.next
+dist
+out
+build
+
+# Ignore package manager lock files
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+
+# Ignore environment files
+.env
+.env.local
+.env.*.local
+
+# Ignore configuration files
+*.config.js
+*.config.cjs
+*.config.mjs
+*.config.ts
+tailwind.config.js
+postcss.config.js
+next.config.js
+vite.config.js
+webpack.config.js
+babel.config.js
+
+# Ignore logs and system files
+logs
+*.log
+*.log.*
+.DS_Store
+
+# Ignore temporary files
+.tmp
+.cache
+coverage
+.vscode
+.idea
+
+# Ignore markdown and documentation files
+*.md
+CHANGELOG.md
+LICENSE
+README.md
+
+# Ignore images and static assets
+public/images
+public/fonts
+public/icons
+
+# Ignore generated types and test output
+*.d.ts
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx

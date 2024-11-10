@@ -1,3 +1,4 @@
+# Node modules
 /node_modules
 /.pnp
 .pnp.*
@@ -7,33 +8,111 @@
 !.yarn/releases
 !.yarn/versions
 
-# testing
-/coverage
+# Yarn specific files
+.yarnrc.yml
+yarn.lock
 
-# next.js
-/.next/
-/out/
+# Lock files
+package-lock.json
+pnpm-lock.yaml
 
-# production
+# Next.js build output
+.next/
+out/
+
+# Vercel deployment
+.vercel/
+.vscode/
+.idea/
+
+# Production build
 /build
 
-# misc
-.DS_Store
-*.pem
+# TypeScript build files
+*.tsbuildinfo
+next-env.d.ts
 
-# debug
+# Testing and coverage
+coverage/
+*.spec.ts
+*.spec.tsx
+*.test.ts
+*.test.tsx
+jest.config.js
+vitest.config.ts
+*.snap
+
+# Logs and debug files
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log
 
-# env files (can opt-in for commiting if needed)
-.env*
+# Environment variables
+.env
+.env.*
+.env.local
 .env.development
-.ev.production
+.env.production
 
-# vercel
-.vercel
+# Miscellaneous
+.DS_Store
+Thumbs.db
+*.pem
+*.key
+*.crt
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# System files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.bak
+
+# Ignore temporary files
+/tmp
+/cache
+.cache/
+
+# Ignore public assets (if dynamically generated)
+public/fonts
+public/icons
+public/images/generated
+
+# Ignore generated static files
+*.html
+*.css.map
+*.js.map
+
+# Ignore Babel and other config files
+babel.config.js
+babel.config.cjs
+babel.config.mjs
+.eslintcache
+.eslintrc.cache
+.prettiercache
+.prettierignore.cache
+stylelint.config.js
+
+# Ignore Storybook files
+storybook-static/
+*.stories.*
+*.story.*
+
+# Ignore MacOS system files
+.DS_Store
+
+# Ignore JetBrains IDE files
+.idea/
+
+# Ignore VS Code workspace files
+.vscode/
+
+# Ignore temporary files created by editor and OS
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.tmp
