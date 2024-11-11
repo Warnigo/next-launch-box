@@ -703,12 +703,23 @@
       }
     },
     {
-      // Ignore specific rules in src/app directory
-      "files": ["src/app/**/*.ts", "src/app/**/*.tsx"],
+      "files": ["*.js", "*.mjs"],
+      "parser": "espree",
+      "extends": [
+        "eslint:recommended"
+      ],
       "rules": {
-        "@typescript-eslint/explicit-function-return-type": "off",
-        "react/function-component-definition": "off"
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/*": "off"
       }
     }
+    // {
+    //   // Ignore specific rules in src/app directory
+    //   "files": ["src/app/**/*.ts", "src/app/**/*.tsx"],
+    //   "rules": {
+    //     "@typescript-eslint/explicit-function-return-type": "off",
+    //     "react/function-component-definition": "off"
+    //   }
+    // }
   ]
 }

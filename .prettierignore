@@ -37,14 +37,12 @@ logs
 .tmp
 .cache
 coverage
-.vscode
 .idea
 
 # Ignore markdown and documentation files
 *.md
 CHANGELOG.md
 LICENSE
-README.md
 
 # Ignore images and static assets
 public/images
