@@ -8,5 +8,8 @@
   "arrowParens": "avoid",
   "endOfLine": "auto",
   "singleAttributePerLine": true,
-  "jsxSingleQuote": false
+  "jsxSingleQuote": false,
+  "plugins": [
+    "prettier-plugin-tailwindcss"
+  ]
 }

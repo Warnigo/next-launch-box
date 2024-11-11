@@ -10,6 +10,7 @@ export const devDependenciesList = [
   '@types/testing-library__jest-dom',
   '@types/testing-library__react',
   '@types/testing-library__user-event',
+  '@typescript-eslint/typescript-estree',
 
   // ESLint and Prettier
   'eslint',

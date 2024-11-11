@@ -92,6 +92,8 @@
         "allowDirectConstAssertionInArrowFunctions": true
       }
     ],
+    "arrow-body-style": ["error", "as-needed"],
+    "prefer-arrow-callback": "error",
     "@typescript-eslint/consistent-type-imports": [
       "error",
       {
