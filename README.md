@@ -3,15 +3,14 @@
 </h1>
 
 <p align="center">
-    A fully responsive and customizable Next.js template designed for rapid frontend development. 
-    This template comes pre-configured with TypeScript, Tailwind CSS, and optimized SEO settings 
-    to kickstart your project. Perfect for developers looking for a clean, minimal, and scalable starting point.
+    A fully responsive and customizable Next.js template designed for rapid frontend development. This template comes pre-configured with TypeScript, Tailwind CSS, and optimized SEO settings to kickstart your project. Perfect for developers looking for a clean, minimal, and scalable starting point.
 </p>
 
 <div align="center">
-    <img alt="GitHub package.json version (branch)" src="https://img.shields.io/github/package-json/v/Warnigo/next-launch-box/main?style=flat&label=version&labelColor=%23ffffff&color=%23454545">
-    <img alt="GitHub License" src="https://img.shields.io/github/license/Warnigo/next-launch-box?style=flat&label=license&labelColor=%23ffffff&color=%23454545">
+    <img alt="GitHub package.json version (branch)" src="https://img.shields.io/github/package-json/v/Warnigo/next-launch-box/main?style=flat&label=version&labelColor=%2320222d&color=%23687fdb&logo=tag&logoColor=%23ffffff">
+    <img alt="GitHub License" src="https://img.shields.io/github/license/Warnigo/next-launch-box?style=flat&label=license&labelColor=%2320222d&color=%23687fdb&logo=github&logoColor=%23ffffff">
 </div>
+
 
 ## Getting Started
 
