@@ -1,3 +1,5 @@
-import { type FC, type PropsWithChildren } from 'react';
+import { type FC, Fragment, type PropsWithChildren } from 'react'
 
-export const Provider: FC<PropsWithChildren> = ({ children }) => <div>{children}</div>;
+export const Provider: FC<PropsWithChildren> = ({ children }) => <Fragment>{children}</Fragment>
+
+Provider.displayName = 'Provider'

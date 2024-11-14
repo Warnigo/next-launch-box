@@ -1,14 +1,21 @@
-import { type FC, type PropsWithChildren } from 'react';
+import { type FC, type PropsWithChildren } from 'react'
 
-import './styles/globals.css';
+import { MainLayout } from './layouts'
+import { Provider } from './providers'
+
+import './styles/globals.css'
 
 const RootLayout: FC<PropsWithChildren> = ({ children }) => (
   <html
     suppressHydrationWarning
     lang="en"
   >
-    <body>{children}</body>
+    <body>
+      <Provider>
+        <MainLayout>{children}</MainLayout>
+      </Provider>
+    </body>
   </html>
-);
+)
 
-export default RootLayout;
+export default RootLayout
