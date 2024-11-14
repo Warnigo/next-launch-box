@@ -1,10 +1,6 @@
-<div align="center">
-<pre>
-╔╗╔╔═╗═╗ ╦╔╦╗  ╦  ╔═╗╦ ╦╔╗╔╔═╗╦ ╦  ╔╗ ╔═╗═╗ ╦
-║║║║╣ ╔╩╦╝ ║   ║  ╠═╣║ ║║║║║  ╠═╣  ╠╩╗║ ║╔╩╦╝
-╝╚╝╚═╝╩ ╚═ ╩   ╩═╝╩ ╩╚═╝╝╚╝╚═╝╩ ╩  ╚═╝╚═╝╩ ╚═
-</pre>
-</div>
+<h1 align="center">
+  <samp>Next Launch Box</samp>
+</h1>
 
 <h3 align="center">🚀 Ignite Your Web Development Journey 🚀</h3>
 
@@ -19,18 +15,24 @@
     <tr>
       <td align="center">⚡️</td>
       <td>Next.js 13</td>
+    </tr>
+    <tr>
       <td align="center">🎨</td>
       <td>Tailwind CSS</td>
     </tr>
     <tr>
       <td align="center">📘</td>
       <td>TypeScript</td>
+    </tr>
+    <tr>
       <td align="center">🔍</td>
       <td>SEO Optimized</td>
     </tr>
     <tr>
       <td align="center">📱</td>
       <td>Responsive Design</td>
+    </tr>
+    <tr>
       <td align="center">🚀</td>
       <td>Performance Tuned</td>
     </tr>
