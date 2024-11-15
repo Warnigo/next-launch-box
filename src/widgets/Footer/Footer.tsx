@@ -7,4 +7,5 @@ const Footer: FC = () => (
 )
 
 Footer.displayName = 'Footer'
+
 export default Footer
