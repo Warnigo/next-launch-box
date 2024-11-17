@@ -101,7 +101,7 @@
         "fixStyle": "inline-type-imports"
       }
     ],
-    "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+    //    "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
     "@typescript-eslint/consistent-type-assertions": [
       "error",
       {
@@ -493,6 +493,7 @@
     "unicorn/prefer-top-level-await": "error",
     "unicorn/prefer-type-error": "error",
     "unicorn/prevent-abbreviations": [
+      // this
       "error",
       {
         "allowList": {
@@ -617,18 +618,18 @@
         "allowedNames": ["self"]
       }
     ],
-    "@typescript-eslint/no-type-alias": [
-      "error",
-      {
-        "allowAliases": "in-unions-and-intersections",
-        "allowCallbacks": "always",
-        "allowConditionalTypes": "always",
-        "allowConstructors": "always",
-        "allowLiterals": "in-unions-and-intersections",
-        "allowMappedTypes": "always",
-        "allowTupleTypes": "always"
-      }
-    ],
+    //    "@typescript-eslint/no-type-alias": [
+    //      "error",
+    //      {
+    //        "allowAliases": "in-unions-and-intersections",
+    //        "allowCallbacks": "always",
+    //        "allowConditionalTypes": "always",
+    //        "allowConstructors": "always",
+    //        "allowLiterals": "in-unions-and-intersections",
+    //        "allowMappedTypes": "always",
+    //        "allowTupleTypes": "always"
+    //      }
+    //    ],
     "@typescript-eslint/no-unnecessary-qualifier": "error",
     "@typescript-eslint/no-useless-empty-export": "error",
     "@typescript-eslint/prefer-enum-initializers": "error",

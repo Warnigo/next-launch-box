@@ -4,7 +4,7 @@ import { type Metadata, type Viewport } from 'next'
 import { MainLayout } from '@app/layouts'
 import { NextIntlProvider } from '@app/providers'
 
-interface Properties {
+type Properties = {
   params: { locale: string }
 }
 
