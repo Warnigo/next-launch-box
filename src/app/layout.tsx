@@ -1,5 +1,7 @@
 import { type FC, type PropsWithChildren } from 'react'
 
+import { Provider } from '@app/providers'
+
 import './styles/globals.css'
 
 const RootLayout: FC<PropsWithChildren> = ({ children }) => (
@@ -7,7 +9,9 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => (
     suppressHydrationWarning
     lang="en"
   >
-    <body>{children}</body>
+    <body>
+      <Provider>{children}</Provider>
+    </body>
   </html>
 )
 

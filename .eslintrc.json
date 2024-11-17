@@ -539,33 +539,45 @@
       }
     ],
     "@typescript-eslint/method-signature-style": ["error", "property"],
-    // "@typescript-eslint/naming-convention": [
-    //   "error",
-    //   {
-    //     "selector": "default",
-    //     "format": ["camelCase"],
-    //     "leadingUnderscore": "allow",
-    //     "trailingUnderscore": "forbid"
-    //   },
-    //   {
-    //     "selector": "variable",
-    //     "format": ["camelCase", "UPPER_CASE", "PascalCase"],
-    //     "leadingUnderscore": "allow",
-    //     "trailingUnderscore": "forbid"
-    //   },
-    //   {
-    //     "selector": "function",
-    //     "format": ["camelCase", "PascalCase"]
-    //   },
-    //   {
-    //     "selector": "interface",
-    //     "format": ["PascalCase"],
-    //     "custom": {
-    //       "regex": "^I[A-Z]",
-    //       "match": false
-    //     }
-    //   }
-    // ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "default",
+        "format": ["camelCase"],
+        "leadingUnderscore": "allow",
+        "trailingUnderscore": "forbid"
+      },
+      {
+        "selector": "variable",
+        "format": ["camelCase", "UPPER_CASE", "PascalCase"],
+        "leadingUnderscore": "allow",
+        "trailingUnderscore": "forbid"
+      },
+      {
+        "selector": "function",
+        "format": ["camelCase", "PascalCase"]
+      },
+      {
+        "selector": "interface",
+        "format": ["PascalCase"],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": false
+        }
+      },
+      {
+        "selector": "typeAlias",
+        "format": ["PascalCase"],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": false
+        }
+      },
+      {
+        "selector": "import",
+        "format": ["camelCase", "PascalCase", "UPPER_CASE"]
+      }
+    ],
     "@typescript-eslint/no-base-to-string": "error",
     "@typescript-eslint/no-confusing-non-null-assertion": "error",
     "@typescript-eslint/no-confusing-void-expression": [

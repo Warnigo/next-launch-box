@@ -22,11 +22,6 @@
       "@features/*": ["src/features/*"],
       "@entities/*": ["src/entities/*"],
       "@widgets/*": ["src/widgets/*"],
-      "@lib/*": ["src/shared/lib/*"],
-      "@config/*": ["src/shared/config/*"],
-      "@ui/*": ["src/shared/ui/*"],
-      "@helpers/*": ["src/shared/helpers/*"],
-      "@api/*": ["src/shared/api/*"],
       "@images/*": ["public/images/*"],
       "@fonts/*": ["public/fonts/*"]
     }
