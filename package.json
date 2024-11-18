@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node scripts/reactor.mjs --dev && next dev --turbopack",
+    "build": "node scripts/reactor.mjs --build && next build",
+    "start": "node scripts/reactor.mjs --start && next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "prepare": "husky",
