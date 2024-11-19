@@ -136,6 +136,7 @@
         "checkUnions": true
       }
     ],
+    "@typescript-eslint/no-unsafe-assignment": "off",
 
     // React specific rules
     "react/react-in-jsx-scope": "off",
@@ -520,6 +521,7 @@
     "unicorn/switch-case-braces": ["error", "always"],
     "unicorn/text-encoding-identifier-case": "error",
     "unicorn/throw-new-error": "error",
+    //    "unicorn/no-await-expression-member": "off",
 
     // Additional TypeScript rules
     "@typescript-eslint/adjacent-overload-signatures": "error",
