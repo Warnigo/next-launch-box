@@ -1,3 +1,16 @@
-import { type FC, type PropsWithChildren } from 'react';
+import { type FC, type PropsWithChildren } from 'react'
 
-export const Provider: FC<PropsWithChildren> = ({ children }) => <div>{children}</div>;
+import { ThemeProvider } from './ThemeProvider'
+
+export const Provider: FC<PropsWithChildren> = ({ children }) => (
+  <ThemeProvider
+    disableTransitionOnChange
+    enableSystem
+    attribute="class"
+    defaultTheme="dark"
+  >
+    {children}
+  </ThemeProvider>
+)
+
+Provider.displayName = 'Provider'

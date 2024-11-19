@@ -101,7 +101,7 @@
         "fixStyle": "inline-type-imports"
       }
     ],
-    "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+    //    "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
     "@typescript-eslint/consistent-type-assertions": [
       "error",
       {
@@ -111,7 +111,7 @@
     ],
     "@typescript-eslint/no-floating-promises": "error",
     "@typescript-eslint/no-misused-promises": "error",
-    "@typescript-eslint/await-thenable": "error",
+    "@typescript-eslint/await-thenable": "off", // error
     "@typescript-eslint/no-unnecessary-type-assertion": "error",
     "@typescript-eslint/no-unnecessary-condition": "error",
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
@@ -136,6 +136,7 @@
         "checkUnions": true
       }
     ],
+    "@typescript-eslint/no-unsafe-assignment": "off",
 
     // React specific rules
     "react/react-in-jsx-scope": "off",
@@ -303,7 +304,7 @@
     "prettier/prettier": [
       "error",
       {
-        "semi": true,
+        "semi": false,
         "singleQuote": true,
         "tabWidth": 2,
         "trailingComma": "es5",
@@ -493,6 +494,7 @@
     "unicorn/prefer-top-level-await": "error",
     "unicorn/prefer-type-error": "error",
     "unicorn/prevent-abbreviations": [
+      // this
       "error",
       {
         "allowList": {
@@ -519,6 +521,7 @@
     "unicorn/switch-case-braces": ["error", "always"],
     "unicorn/text-encoding-identifier-case": "error",
     "unicorn/throw-new-error": "error",
+    //    "unicorn/no-await-expression-member": "off",
 
     // Additional TypeScript rules
     "@typescript-eslint/adjacent-overload-signatures": "error",
@@ -539,33 +542,45 @@
       }
     ],
     "@typescript-eslint/method-signature-style": ["error", "property"],
-    // "@typescript-eslint/naming-convention": [
-    //   "error",
-    //   {
-    //     "selector": "default",
-    //     "format": ["camelCase"],
-    //     "leadingUnderscore": "allow",
-    //     "trailingUnderscore": "forbid"
-    //   },
-    //   {
-    //     "selector": "variable",
-    //     "format": ["camelCase", "UPPER_CASE", "PascalCase"],
-    //     "leadingUnderscore": "allow",
-    //     "trailingUnderscore": "forbid"
-    //   },
-    //   {
-    //     "selector": "function",
-    //     "format": ["camelCase", "PascalCase"]
-    //   },
-    //   {
-    //     "selector": "interface",
-    //     "format": ["PascalCase"],
-    //     "custom": {
-    //       "regex": "^I[A-Z]",
-    //       "match": false
-    //     }
-    //   }
-    // ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "default",
+        "format": ["camelCase", "PascalCase", "UPPER_CASE"],
+        "leadingUnderscore": "allow",
+        "trailingUnderscore": "forbid"
+      },
+      {
+        "selector": "variable",
+        "format": ["camelCase", "UPPER_CASE", "PascalCase"],
+        "leadingUnderscore": "allow",
+        "trailingUnderscore": "forbid"
+      },
+      {
+        "selector": "function",
+        "format": ["camelCase", "PascalCase"]
+      },
+      {
+        "selector": "interface",
+        "format": ["PascalCase"],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": false
+        }
+      },
+      {
+        "selector": "typeAlias",
+        "format": ["PascalCase"],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": false
+        }
+      },
+      {
+        "selector": "import",
+        "format": ["camelCase", "PascalCase", "UPPER_CASE"]
+      }
+    ],
     "@typescript-eslint/no-base-to-string": "error",
     "@typescript-eslint/no-confusing-non-null-assertion": "error",
     "@typescript-eslint/no-confusing-void-expression": [
@@ -605,18 +620,18 @@
         "allowedNames": ["self"]
       }
     ],
-    "@typescript-eslint/no-type-alias": [
-      "error",
-      {
-        "allowAliases": "in-unions-and-intersections",
-        "allowCallbacks": "always",
-        "allowConditionalTypes": "always",
-        "allowConstructors": "always",
-        "allowLiterals": "in-unions-and-intersections",
-        "allowMappedTypes": "always",
-        "allowTupleTypes": "always"
-      }
-    ],
+    //    "@typescript-eslint/no-type-alias": [
+    //      "error",
+    //      {
+    //        "allowAliases": "in-unions-and-intersections",
+    //        "allowCallbacks": "always",
+    //        "allowConditionalTypes": "always",
+    //        "allowConstructors": "always",
+    //        "allowLiterals": "in-unions-and-intersections",
+    //        "allowMappedTypes": "always",
+    //        "allowTupleTypes": "always"
+    //      }
+    //    ],
     "@typescript-eslint/no-unnecessary-qualifier": "error",
     "@typescript-eslint/no-useless-empty-export": "error",
     "@typescript-eslint/prefer-enum-initializers": "error",
@@ -634,18 +649,18 @@
         "ignoreStringArrays": true
       }
     ],
-    "@typescript-eslint/strict-boolean-expressions": [
-      "error",
-      {
-        "allowString": false,
-        "allowNumber": false,
-        "allowNullableObject": false,
-        "allowNullableBoolean": false,
-        "allowNullableString": false,
-        "allowNullableNumber": false,
-        "allowAny": false
-      }
-    ],
+    //    "@typescript-eslint/strict-boolean-expressions": [
+    //      "error",
+    //      {
+    //        "allowString": false,
+    //        "allowNumber": false,
+    //        "allowNullableObject": false,
+    //        "allowNullableBoolean": false,
+    //        "allowNullableString": false,
+    //        "allowNullableNumber": false,
+    //        "allowAny": false
+    //      }
+    //    ],
     "@typescript-eslint/switch-exhaustiveness-check": "error",
     "@typescript-eslint/unified-signatures": "error"
   },
@@ -712,14 +727,13 @@
         "@typescript-eslint/no-var-requires": "off",
         "@typescript-eslint/*": "off"
       }
+    },
+    {
+      "files": ["tailwind.config.ts"],
+      "rules": {
+        "@typescript-eslint/no-require-imports": "off",
+        "unicorn/prefer-module": "off"
+      }
     }
-    // {
-    //   // Ignore specific rules in src/app directory
-    //   "files": ["src/app/**/*.ts", "src/app/**/*.tsx"],
-    //   "rules": {
-    //     "@typescript-eslint/explicit-function-return-type": "off",
-    //     "react/function-component-definition": "off"
-    //   }
-    // }
   ]
 }

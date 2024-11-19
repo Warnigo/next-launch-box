@@ -1,8 +1,8 @@
-yarn lint
-yarn types
-yarn format
-yarn check:versions
-yarn sort:dependencies
+pnpm lint
+pnpm types
+pnpm format
+pnpm check:versions
+pnpm sort:dependencies
 
 if git diff --staged --quiet; then
   echo "No changes to commit after formatting."

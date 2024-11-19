@@ -1,1 +1,2 @@
-export { Provider } from './Provider';
+export { NextIntlProvider } from './NextIntlProvider'
+export { Provider } from './Provider'
