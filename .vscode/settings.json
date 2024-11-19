@@ -1,17 +1,13 @@
 {
-  // Format on save using Prettier
   "editor.formatOnSave": true,
 
-  // Use ESLint for formatting instead of the default formatter
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"
   },
 
-  // Enable ESLint validation
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
 
-  // Configure Prettier settings
   "prettier.semi": true,
   "prettier.singleQuote": true,
   "prettier.tabWidth": 2,
@@ -21,15 +17,12 @@
   "prettier.arrowParens": "avoid",
   "prettier.endOfLine": "auto",
 
-  // Tailwind CSS support
   "tailwindCSS.experimental.classRegex": ["twMerge\\(([^)]*)\\)", "clsx\\(([^)]*)\\)"],
 
-  // TypeScript settings
   "typescript.tsserver.formatOnSave": false,
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.preferences.importModuleSpecifier": "relative",
 
-  // Disable built-in VSCode formatter for certain languages to avoid conflicts
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -43,7 +36,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
-  // Disable conflicting extensions
   "editor.formatOnPaste": false,
   "editor.formatOnSaveMode": "modifications",
   "eslint.quiet": true

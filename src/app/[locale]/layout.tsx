@@ -1,11 +1,12 @@
-import { type FC, type PropsWithChildren } from 'react'
+import { type FC, type ReactNode } from 'react'
 import { type Metadata, type Viewport } from 'next'
 
 import { MainLayout } from '@app/layouts'
 import { NextIntlProvider } from '@app/providers'
 
 type Properties = {
-  params: { locale: string }
+  children: ReactNode
+  params: Promise<{ locale: string }>
 }
 
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export const viewport: Viewport = {
   initialScale: 1,
 }
 
-const LocaleLayout: FC<PropsWithChildren<Properties>> = async ({ children, params }) => {
+const LocaleLayout: FC<Properties> = async ({ children, params }) => {
   const { locale } = await params
 
   return (

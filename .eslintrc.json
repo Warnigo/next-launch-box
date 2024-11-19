@@ -544,7 +544,7 @@
       "error",
       {
         "selector": "default",
-        "format": ["camelCase"],
+        "format": ["camelCase", "PascalCase", "UPPER_CASE"],
         "leadingUnderscore": "allow",
         "trailingUnderscore": "forbid"
       },
@@ -725,14 +725,13 @@
         "@typescript-eslint/no-var-requires": "off",
         "@typescript-eslint/*": "off"
       }
+    },
+    {
+      "files": ["tailwind.config.ts"],
+      "rules": {
+        "@typescript-eslint/no-require-imports": "off",
+        "unicorn/prefer-module": "off"
+      }
     }
-    // {
-    //   // Ignore specific rules in src/app directory
-    //   "files": ["src/app/**/*.ts", "src/app/**/*.tsx"],
-    //   "rules": {
-    //     "@typescript-eslint/explicit-function-return-type": "off",
-    //     "react/function-component-definition": "off"
-    //   }
-    // }
   ]
 }

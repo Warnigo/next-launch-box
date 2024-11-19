@@ -14,18 +14,26 @@
     "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "types": "tsc --noEmit",
     "typecheck": "tsc --noEmit --incremental false",
-    "clean": "rimraf .next && rimraf .next/cache && rimraf node_modules && rm -rf yarn.lock",
+    "clean": "rimraf .next && rimraf .next/cache && rimraf node_modules && rm -rf pnpm-lock.yaml",
     "clean:build": "rimraf .next",
     "clean:cache": "rimraf .next/cache",
-    "reboot": "yarn clean && yarn install",
+    "reboot": "pnpm clean && pnpm install",
+    "shadcn": "pnpm dlx shadcn@latest add",
     "sort:dependencies": "node scripts/sort-dependencies/sort-dependencies.mjs",
     "check:versions": "node scripts/validate-package-versions.mjs"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "1.1.0",
+    "class-variance-authority": "0.7.0",
+    "clsx": "2.1.1",
+    "lucide-react": "0.460.0",
     "next": "15.0.1",
     "next-intl": "3.25.1",
+    "next-themes": "0.4.3",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "tailwind-merge": "2.5.4",
+    "tailwindcss-animate": "1.0.7"
   },
   "devDependencies": {
     "@emotion/eslint-plugin": "11.12.0",
@@ -59,6 +67,7 @@
     "prettier": "3.3.3",
     "prettier-plugin-tailwindcss": "0.6.8",
     "rimraf": "6.0.1",
+    "shadcn": "2.1.6",
     "tailwindcss": "3.4.14",
     "typescript": "5.6.3"
   },
