@@ -3,13 +3,21 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "author": {
+    "name": "Abubakir Shavkatov (Warnigo)",
+    "url": "https://github.com/warnigo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warnigo/next-launch-box"
+  },
   "scripts": {
     "dev": "node scripts/reactor.mjs --dev && next dev --turbopack",
     "build": "node scripts/reactor.mjs --build && next build",
     "start": "node scripts/reactor.mjs --start && next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
-    "prepare": "husky",
+    "prepare": "pnpm generate:env --env=development && husky",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "types": "tsc --noEmit",
@@ -20,7 +28,8 @@
     "reboot": "pnpm clean && pnpm install",
     "shadcn": "pnpm dlx shadcn@latest add",
     "sort:dependencies": "node scripts/sort-dependencies/sort-dependencies.mjs",
-    "check:versions": "node scripts/validate-package-versions.mjs"
+    "check:versions": "node scripts/validate-package-versions.mjs",
+    "generate:env": "node scripts/generate_env.mjs"
   },
   "dependencies": {
     "@radix-ui/react-slot": "1.1.0",

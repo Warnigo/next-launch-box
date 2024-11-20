@@ -82,7 +82,7 @@
         "destructuredArrayIgnorePattern": "^_"
       }
     ],
-    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-explicit-any": "off", // error - if your need won't any type
     "@typescript-eslint/explicit-function-return-type": [
       "error",
       {
@@ -137,6 +137,9 @@
       }
     ],
     "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unsafe-return": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-argument": "off",
 
     // React specific rules
     "react/react-in-jsx-scope": "off",
@@ -521,7 +524,7 @@
     "unicorn/switch-case-braces": ["error", "always"],
     "unicorn/text-encoding-identifier-case": "error",
     "unicorn/throw-new-error": "error",
-    //    "unicorn/no-await-expression-member": "off",
+    "unicorn/no-null": "off",
 
     // Additional TypeScript rules
     "@typescript-eslint/adjacent-overload-signatures": "error",
@@ -542,45 +545,45 @@
       }
     ],
     "@typescript-eslint/method-signature-style": ["error", "property"],
-    "@typescript-eslint/naming-convention": [
-      "error",
-      {
-        "selector": "default",
-        "format": ["camelCase", "PascalCase", "UPPER_CASE"],
-        "leadingUnderscore": "allow",
-        "trailingUnderscore": "forbid"
-      },
-      {
-        "selector": "variable",
-        "format": ["camelCase", "UPPER_CASE", "PascalCase"],
-        "leadingUnderscore": "allow",
-        "trailingUnderscore": "forbid"
-      },
-      {
-        "selector": "function",
-        "format": ["camelCase", "PascalCase"]
-      },
-      {
-        "selector": "interface",
-        "format": ["PascalCase"],
-        "custom": {
-          "regex": "^I[A-Z]",
-          "match": false
-        }
-      },
-      {
-        "selector": "typeAlias",
-        "format": ["PascalCase"],
-        "custom": {
-          "regex": "^I[A-Z]",
-          "match": false
-        }
-      },
-      {
-        "selector": "import",
-        "format": ["camelCase", "PascalCase", "UPPER_CASE"]
-      }
-    ],
+    //    "@typescript-eslint/naming-convention": [
+    //      "error",
+    //      {
+    //        "selector": "default",
+    //        "format": ["camelCase", "PascalCase", "UPPER_CASE"],
+    //        "leadingUnderscore": "allow",
+    //        "trailingUnderscore": "forbid"
+    //      },
+    //      {
+    //        "selector": "variable",
+    //        "format": ["camelCase", "UPPER_CASE", "PascalCase"],
+    //        "leadingUnderscore": "allow",
+    //        "trailingUnderscore": "forbid"
+    //      },
+    //      {
+    //        "selector": "function",
+    //        "format": ["camelCase", "PascalCase"]
+    //      },
+    //      {
+    //        "selector": "interface",
+    //        "format": ["PascalCase"],
+    //        "custom": {
+    //          "regex": "^I[A-Z]",
+    //          "match": false
+    //        }
+    //      },
+    //      {
+    //        "selector": "typeAlias",
+    //        "format": ["PascalCase"],
+    //        "custom": {
+    //          "regex": "^I[A-Z]",
+    //          "match": false
+    //        }
+    //      },
+    //      {
+    //        "selector": "import",
+    //        "format": ["camelCase", "PascalCase", "UPPER_CASE"]
+    //      }
+    //    ],
     "@typescript-eslint/no-base-to-string": "error",
     "@typescript-eslint/no-confusing-non-null-assertion": "error",
     "@typescript-eslint/no-confusing-void-expression": [
@@ -620,18 +623,6 @@
         "allowedNames": ["self"]
       }
     ],
-    //    "@typescript-eslint/no-type-alias": [
-    //      "error",
-    //      {
-    //        "allowAliases": "in-unions-and-intersections",
-    //        "allowCallbacks": "always",
-    //        "allowConditionalTypes": "always",
-    //        "allowConstructors": "always",
-    //        "allowLiterals": "in-unions-and-intersections",
-    //        "allowMappedTypes": "always",
-    //        "allowTupleTypes": "always"
-    //      }
-    //    ],
     "@typescript-eslint/no-unnecessary-qualifier": "error",
     "@typescript-eslint/no-useless-empty-export": "error",
     "@typescript-eslint/prefer-enum-initializers": "error",
@@ -649,18 +640,6 @@
         "ignoreStringArrays": true
       }
     ],
-    //    "@typescript-eslint/strict-boolean-expressions": [
-    //      "error",
-    //      {
-    //        "allowString": false,
-    //        "allowNumber": false,
-    //        "allowNullableObject": false,
-    //        "allowNullableBoolean": false,
-    //        "allowNullableString": false,
-    //        "allowNullableNumber": false,
-    //        "allowAny": false
-    //      }
-    //    ],
     "@typescript-eslint/switch-exhaustiveness-check": "error",
     "@typescript-eslint/unified-signatures": "error"
   },
@@ -706,14 +685,15 @@
       }
     },
     {
-      // Enforce kebab-case for all other files (.ts, .js, etc.)
+      // Enforce kebab-case or camelCase for all other files (.ts, .js, etc.)
       "files": ["*.ts", "*.js", "*.mjs"],
       "rules": {
         "unicorn/filename-case": [
           "error",
           {
             "cases": {
-              "kebabCase": true
+              "kebabCase": true,
+              "camelCase": true
             }
           }
         ]

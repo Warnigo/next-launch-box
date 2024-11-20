@@ -1,1 +1,2 @@
-export type { Locale } from './locales'
+export * from './api'
+export * from './locales'
