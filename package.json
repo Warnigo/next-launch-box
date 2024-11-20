@@ -15,6 +15,7 @@
     "dev": "node scripts/reactor.mjs --dev && next dev --turbopack",
     "build": "node scripts/reactor.mjs --build && next build",
     "start": "node scripts/reactor.mjs --start && next start",
+    "playwright:test": "pnpm dlx playwright test",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "prepare": "pnpm generate:env --env=development && husky",
@@ -45,8 +46,14 @@
     "tailwindcss-animate": "1.0.7"
   },
   "devDependencies": {
+    "@axe-core/react": "4.10.1",
     "@emotion/eslint-plugin": "11.12.0",
     "@emotion/react": "11.13.3",
+    "@playwright/test": "1.49.0",
+    "@testing-library/jest-dom": "6.6.3",
+    "@testing-library/react": "16.0.1",
+    "@testing-library/user-event": "14.5.2",
+    "@types/jest": "29.5.14",
     "@types/node": "22.9.0",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
@@ -72,12 +79,15 @@
     "eslint-plugin-unicorn": "56.0.0",
     "eslint-plugin-unused-imports": "4.1.4",
     "husky": "9.1.6",
+    "jest": "29.7.0",
+    "jest-environment-jsdom": "29.7.0",
     "postcss": "8.4.47",
     "prettier": "3.3.3",
     "prettier-plugin-tailwindcss": "0.6.8",
     "rimraf": "6.0.1",
     "shadcn": "2.1.6",
     "tailwindcss": "3.4.14",
+    "ts-jest": "29.2.5",
     "typescript": "5.6.3"
   },
   "browserslist": [
